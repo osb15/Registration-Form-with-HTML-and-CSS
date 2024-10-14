@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <center>
+        <h1>Registration Form</h1>
+    </center>
+    <div class="form-container">
+        <form action="register" method="post">
+            <label for="first-name">First Name:</label> <input type="text" name="first-name" placeholder="Enter your first name" required>
+           
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name" placeholder="Enter your last name" required>
+
+            <label for="username">Username:</label>
+            <input type="text" name="username" placeholder="Set your username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Set your login password" required>
+
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender" required>
+                <option value="Select">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="mobile-no">Mobile No:</label>
+            <input type="number" id="mobile-no" name="mobile-no" placeholder="Enter your mobile number" required>
+
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="graduation-year">Graduation Passing Year:</label>
+            <select name="graduation-year" id="graduation-year" required>
+                <option value="Select Year">Select Year</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+
+            <label for="specialization">Specialization:</label>
+            <select name="specialization" id="specialization" required>
+                <option value="Select">Select</option>
+                <option value="BE.Engineering">BE.Engineering</option>
+                <option value="B.S.C.">B.S.C</option>
+                <option value="B.C.S.">B.C.S</option>
+                <option value="B.Com">B.Com</option>
+                <option value="B.A">B.A.</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="semesters">How many semesters have you completed in graduation?</label>
+            <input type="number" id="semesters" name="semesters" required>
+
+            <label for="tenth-percentage">10th Percentage:</label>
+            <input type="number" name="tenth-percentage" placeholder="Enter your percentage" required>
+
+            <label for="twelfth-percentage">12th Percentage:</label>
+            <input type="number" name="twelfth-percentage" placeholder="Enter your percentage" required>
+
+            <label for="experience">Fresher Experience:</label>
+            <input type="text" name="experience" placeholder="Type here">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
